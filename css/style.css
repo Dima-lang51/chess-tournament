@@ -415,7 +415,7 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-image: url('../img/fon-main.png');
+    background: url('../img/fon-main.png');
 }
 
 .block__number {
@@ -474,7 +474,7 @@ body {
     right: -63px;
     width: 400px;
     height: 244px;
-    background-image: url('../img/plane.png');
+    background: url('../img/plane.png');
     background-size: cover;
     background-position: center;
 }
@@ -978,7 +978,7 @@ body {
     }
 
     .header {
-        background-image: url('../img/main-Banner-mob.png');
+        background: url('../img/main-Banner-mob.png');
         background-position: center top;
     }
 
