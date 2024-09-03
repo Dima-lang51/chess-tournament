@@ -948,6 +948,13 @@ body {
         width: 321px;
         height: 226px;
     }
+    .lecture__content-title {
+        font-size: 32px;
+    }
+
+    .lecture__description, .lecture__subtitle {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -978,7 +985,7 @@ body {
     }
 
     .header {
-        background: url('../img/main-Banner-mob.png');
+        background: url('../img/main-banner-mob.png');
         background-position: center top;
     }
 
