@@ -66,7 +66,7 @@ body {
 }
 
 .header {
-    background-image: url('/img/main-banner-city.png');
+    background-image: url('../img/main-banner-city.png');
     background-position: top center;
     background-repeat: no-repeat;
     color: #000;
@@ -415,7 +415,7 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-image: url(/img/Group\ 20.png);
+    background-image: url(../img/fon-main.png);
 }
 
 .block__number {
@@ -474,7 +474,7 @@ body {
     right: -63px;
     width: 400px;
     height: 244px;
-    background-image: url('/img/plane.png');
+    background-image: url('../img/plane.png');
     background-size: cover;
     background-position: center;
 }
@@ -675,14 +675,12 @@ body {
     top: 50%;
     left: 14%;
     transform: translate(-50%, -50%) rotate(-135deg);
-    /* РџРѕРІРѕСЂР°С‡РёРІР°РµС‚ СЃС‚СЂРµР»РєСѓ РІР»РµРІРѕ */
 }
 
 .slider-controls__button--next::before {
     top: 50%;
     left: 85%;
     transform: translate(-50%, -50%) rotate(45deg);
-    /* РџРѕРІРѕСЂР°С‡РёРІР°РµС‚ СЃС‚СЂРµР»РєСѓ РІРїСЂР°РІРѕ */
 }
 
 .slider-controls__button:hover {
@@ -980,7 +978,7 @@ body {
     }
 
     .header {
-        background-image: url('/img/main-Banner-mob.png');
+        background-image: url('../img/main-Banner-mob.png');
         background-position: center top;
     }
 
