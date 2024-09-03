@@ -415,7 +415,7 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-image: url(../img/fon-main.png);
+    background-image: url('../img/fon-main.png');
 }
 
 .block__number {
