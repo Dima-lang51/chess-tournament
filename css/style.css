@@ -1,0 +1,1409 @@
+/* ОБНУЛЕНИЕ */
+
+*,
+*::before,
+*::after {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 18px;
+    color: #201d1d;
+    font-family: "Golos Text", "Merriweather Sans", sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1264px;
+    padding: 0px 21px;
+    margin: 0 auto;
+}
+
+/* -------------- Header ----------------- */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__container {
+    margin-top: 26px;
+    max-width: 545px;
+}
+
+.header {
+    background-image: url('/img/main-banner-city.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.header__title {
+    font-family: "Merriweather", serif;
+    margin-top: 54px;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.4px;
+}
+
+.header__title-top {
+    line-height: 69px;
+    letter-spacing: 0px;
+}
+
+.header__title-midle {
+    text-align: center;
+    letter-spacing: initial;
+    line-height: 64px;
+}
+
+.header__title-bottom {
+    text-align: right;
+    letter-spacing: 0.4px;
+    letter-spacing: initial;
+    line-height: 64px;
+}
+
+.header__description {
+    margin-top: 26px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 13px;
+    margin-top: 40px;
+    margin-bottom: 137px;
+    margin-left: 3px;
+}
+
+.header__button {
+    text-align: center;
+    padding: 15px 30px;
+    width: 263px;
+    height: 72px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a1a1a;
+    border: 2px solid transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header__button:first-child {
+    padding: 15px 41px;
+    letter-spacing: 0.6px;
+    background-color: #000000;
+}
+
+.header__button:last-child {
+    padding: 15px 76px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: black;
+    border-color: #000000;
+}
+
+.header__button:first-child:hover {
+    background-color: #FBCE51;
+    color: #1F1F1F;
+    border-color: #000000;
+    border-color: transparent;
+}
+
+.header__button:last-child:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.header__ticker {
+    position: relative;
+    top: -1px;
+}
+
+.ticker {
+    font-family: "Merriweather", serif;
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 22px;
+    background-color: #F54932;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+    top: -6px;
+    text-transform: uppercase;
+}
+
+.white-dot {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* -------------- Page ----------------- */
+
+.page {
+    margin-top: 760px;
+}
+
+.lecture {
+    margin-top: 80px;
+}
+
+.lecture__title-block {
+    margin-top: 28px;
+    max-width: 760px;
+}
+
+.lecture__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lecture__content-title {
+    display: inline;
+    line-height: 1.3;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 764px;
+    font-size: 36px;
+    text-align: start;
+    line-height: 48px;
+}
+
+.lecture__content-title-bottom {
+    padding-left: 4px;
+}
+
+.lecture__subtitle {
+    padding-top: 2px;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    color: #e63946;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.lecture__content-image-mob {
+    display: none;
+}
+
+.lecture__subtitle {
+    padding-top: 2px;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    color: #e63946;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.lecture__details {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    max-width: 1186px;
+    text-align: left;
+    margin-top: 52px;
+}
+
+.lecture__detail {
+    padding-top: 10px;
+    line-height: 1.3;
+}
+
+.lecture__img {
+    max-width: 474px;
+    margin-left: -27px;
+    margin-top: -18px;
+}
+
+.lecture__description {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.lecture__description span:last-of-type {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.lecture__subtitle-description {
+    display: inline;
+}
+
+.lecture__table {
+    margin-top: 34px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.row:first-child {
+    position: relative;
+    top: 11px;
+    padding-left: 0px;
+
+}
+
+.row:nth-child(2) {
+    position: relative;
+    top: 7px;
+    padding-left: 0px;
+}
+
+.row:nth-child(3) {
+    position: relative;
+    top: 3px;
+    padding-left: 0px;
+}
+
+.row:nth-child(4) {
+    position: relative;
+    top: -1px;
+    padding-left: 0px;
+}
+
+.row:nth-child(5) {
+    position: relative;
+    top: -5px;
+    padding-left: 0px;
+}
+
+
+.row::before {
+    content: "";
+    position: absolute;
+    left: 45.6%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+    transform: translateX(-50%);
+}
+
+.label {
+    flex: 1 1 59%;
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+.value {
+    flex: 1 1 60%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 4px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.lecture__support {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #3057A2;
+}
+
+
+/* -------------- Stages ----------------- */
+.stages {
+    margin-top: 180px;
+}
+
+.stages__title {
+    margin-top: 32px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    color: #313131;
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 806px;
+}
+
+.stages__subtitle {
+    max-width: 271px;
+    display: inline-block;
+    position: relative;
+    left: 6px;
+    bottom: 2px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #3057A2;
+    text-transform: none;
+}
+
+.stages-mob {
+    display: none;
+}
+
+.layout {
+    width: 1222px;
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url(/img/Group\ 20.png);
+}
+
+.block__number {
+    position: relative;
+    top: -19px;
+    left: 11px;
+    font-size: 20px;
+    width: 35px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.block__number-6 {
+    top: -32px;
+}
+
+.block__text {
+    margin-left: 17px;
+    font-size: 20px;
+    max-width: 302px;
+    text-align: left;
+}
+
+.block--1,
+.block--2,
+.block--4,
+.block--5,
+.block--6 {
+    width: 394px;
+    height: 112px;
+}
+
+.block__6 {
+    height: 137px;
+}
+
+.block--3 {
+    width: 394px;
+    height: 244px;
+}
+
+.block--7 {
+    width: 808px;
+    height: 136px;
+}
+
+.plane {
+    position: absolute;
+    bottom: -387px;
+    right: -63px;
+    width: 400px;
+    height: 244px;
+    background-image: url('/img/plane.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.block--1 {
+    top: 0;
+    left: 0;
+}
+
+.block--2 {
+    top: 0;
+    left: 414px;
+}
+
+.block--3 {
+    top: 0;
+    left: 828px;
+}
+
+.block--4 {
+    top: 132px;
+    left: 0;
+}
+
+.block--5 {
+    top: 132px;
+    left: 414px;
+}
+
+.block--6 {
+    top: 264px;
+    left: 0;
+}
+
+.block--7 {
+    top: 264px;
+    left: 414px;
+}
+
+.block__number-3 {
+    position: relative;
+    top: -86px;
+}
+
+.block__number-7 {
+    position: relative;
+    top: -31px;
+}
+
+.block__text-3 {
+    position: relative;
+    top: -30px;
+}
+
+.block__text-4 {
+    position: relative;
+    top: -12px;
+    max-width: 260px;
+}
+
+.block__text-5 {
+    position: relative;
+    max-width: 250px;
+}
+
+.block__text-6 {
+    position: relative;
+    top: 0px;
+}
+
+.block__text-7 {
+    position: relative;
+    max-width: 410px;
+}
+
+
+
+/*------------------- Participants ----------------- */
+
+.participants {
+    margin-top: 554px;
+}
+
+.participants__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.participants__title {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.participants__container {
+    overflow: hidden;
+    position: relative;
+}
+
+.participants__list {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    margin-top: 45px;
+    padding: 0;
+}
+
+.participants__item {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.participants__image {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.participants__name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+}
+
+.participants__description {
+    margin-bottom: 27px;
+    font-size: 20px;
+    color: #666;
+    margin: 6px 0px 0px 0px;
+}
+
+.detaild {
+    width: 113px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background: transparent;
+    color: #3057A2;
+    border: 2px solid #3057A2;
+}
+
+.detaild:hover {
+    background-color: #3057A2;
+    color: white;
+}
+
+
+.detaild:hover {
+    background: #3057A2;
+    color: #FFFFFF;
+}
+
+.slider-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    right: 2px;
+}
+
+.slider-controls__button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-controls__button--prev::before,
+.slider-controls__button--next::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+.slider-controls__button--prev::before {
+    top: 50%;
+    left: 14%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+    /* РџРѕРІРѕСЂР°С‡РёРІР°РµС‚ СЃС‚СЂРµР»РєСѓ РІР»РµРІРѕ */
+}
+
+.slider-controls__button--next::before {
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* РџРѕРІРѕСЂР°С‡РёРІР°РµС‚ СЃС‚СЂРµР»РєСѓ РІРїСЂР°РІРѕ */
+}
+
+.slider-controls__button:hover {
+    background-color: #FBCE51;
+}
+
+.slider-controls__button:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+.slider__indicator {
+    font-size: 18px;
+    color: #333;
+}
+
+.participants__ticker {
+    font-family: "Merriweather", serif;
+    margin-top: 132px;
+    font-weight: 200;
+    font-size: 22px;
+    background-color: #F54932;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.participants__header-ticker {
+    margin-top: 145px;
+}
+
+
+
+/*------------------- Footer ----------------- */
+
+.footer {
+    margin-top: -11px;
+    background-color: #E9DED4;
+}
+
+.footer__container {
+    color: #313131;
+    text-align: left;
+    padding: 11px 51px;
+    font-size: 16px;
+}
+
+.footer__text {
+    margin: 0;
+    padding: 31px 28px 53px 21px;
+    color: #7B7672;
+}
+
+
+
+
+/*------------------- Media ----------------- */
+
+@media (max-width: 1300px) {
+    .layout {
+        width: 100%;
+        height: auto;
+    }
+
+    .block {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .block--1,
+    .block--2,
+    .block--3,
+    .block--4,
+    .block--5,
+    .block--6,
+    .block--7 {
+        width: 100%;
+        height: auto;
+    }
+
+    .block--3,
+    .block--7 {
+        margin-bottom: 20px;
+    }
+
+    .block__number {
+        position: static;
+    }
+
+    .block__text {
+        position: static;
+        max-width: 100%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .plane {
+        bottom: 675px;
+    }
+
+    .participants {
+        margin-top: 218px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .participants__item {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .lecture__details {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .participants__item {
+        flex: 0 0 100%;
+    }
+
+    .lecture__content-image {
+        display: none;
+    }
+
+    .lecture__content-image-mob {
+        margin-bottom: 58px;
+    }
+
+    .header__title {
+        margin-top: 54px;
+    }
+
+    .plane {
+        bottom: 785px;
+    }
+
+}
+
+@media (max-width: 582px) {
+    .header__buttons {
+        margin-bottom: 68px;
+    }
+
+    .header__buttons {
+        margin-bottom: 68px;
+    }
+
+    .stages {
+        margin-top: 80px;
+    }
+
+    .participants {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header__buttons {
+        margin-bottom: 4px;
+    }
+
+    .stages__title {
+        font-size: 42px;
+    }
+
+    .participants__header {
+        display: block;
+    }
+
+    .slider-controls {
+        justify-content: center;
+    }
+
+    .slider-controls__button--prev::before {
+        left: 38%;
+    }
+
+    .slider-controls__button--next::before {
+        left: 62%;
+    }
+
+    .participants__image {
+        width: 290px;
+        height: 290px;
+    }
+
+    .block {
+        display: block;
+    }
+}
+
+@media (max-width: 475px) {
+    .header__title {
+        font-size: 42px;
+    }
+
+    .header__buttons {
+        margin-bottom: 55px;
+    }
+
+    .page {
+        margin-top: 670px;
+    }
+
+    .header__buttons {
+        display: block;
+    }
+
+    .header__button:first-child {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .header__button:last-child {
+        width: 100%;
+    }
+
+    .header__buttons {
+        margin-bottom: 32px;
+    }
+
+    .plane {
+        bottom: 1089px;
+        width: 321px;
+        height: 226px;
+    }
+
+    .lecture__img {
+        text-align: center;
+    }
+
+    .lecture__img-session {
+        max-width: 354px;
+        height: 402px;
+    }
+}
+
+@media (max-width: 432px) {
+
+    .header__buttons {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .plane {
+        bottom: 1141px;
+        width: 321px;
+        height: 226px;
+    }
+}
+
+@media (max-width: 402px) {
+    .plane 
+    {
+        bottom: 1183px;
+        width: 321px;
+        height: 226px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__container {
+        margin-top: 18px;
+    }
+
+    .header__logo {
+        max-width: 213px;
+        height: 32px;
+    }
+
+    .header__title {
+        margin-top: 35px;
+        font-size: 36px;
+    }
+
+    .header__title-top {
+        line-height: 40px;
+    }
+
+    .header__title-midle {
+        line-height: 43px;
+    }
+
+    .header__title-bottom {
+        line-height: 39px;
+    }
+
+    .header {
+        background-image: url('/img/main-Banner-mob.png');
+        background-position: center top;
+    }
+
+    .header__description {
+        margin-top: 24px;
+        text-align: left;
+    }
+
+    .header__description-1 {
+        display: block;
+    }
+
+    .header__buttons {
+        display: block;
+        margin-top: 29px;
+        margin-left: 0px;
+        margin-bottom: 297px;
+    }
+
+    .header__button {
+        width: 100%;
+        height: 51px;
+        padding: 0;
+    }
+
+    .header__button:first-child {
+        padding: 15px 28px;
+        margin-bottom: 10px;
+    }
+
+    .header__button:last-child {
+        padding: 15px 65px;
+    }
+
+    .ticker {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .lecture__title-block {
+        margin-top: 108px
+    }
+
+    .lecture__content-title {
+        line-height: 39px;
+    }
+
+
+    .lecture__content-image {
+        display: none;
+    }
+
+    .lecture__content-image-mob {
+        display: block;
+        margin-top: 23px;
+        max-width: 335px;
+        height: 212px;
+        margin-bottom: 21px;
+    }
+
+    .lecture__content-img {
+        max-width: 335px;
+        height: 210px;
+    }
+
+    .lecture__content-title {
+        font-size: 28px;
+    }
+
+    .lecture__subtitle {
+        font-size: 28px;
+    }
+
+    .lecture__content-title-bottom {
+        padding-left: 0;
+    }
+
+    .lecture__img-session {
+        max-width: 354px;
+        height: 402px;
+    }
+
+    .lecture__img {
+        margin-left: -11px;
+    }
+
+    .lecture__details {
+        margin-top: 28px;
+    }
+
+    .lecture__description {
+        font-size: 28px;
+    }
+
+    .lecture__detail {
+        padding-top: 24px;
+        line-height: 1.3;
+    }
+
+    .lecture__Ostap {
+        display: block;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .label {
+        padding-right: 0px;
+    }
+
+    .row::before {
+        content: none;
+    }
+
+    .row:first-child {
+        line-height: 35px;
+        top: -9px;
+        padding-bottom: 9px;
+    }
+
+    .row:nth-child(2) {
+        line-height: 35px;
+        top: -15px;
+        padding-bottom: 9px;
+    }
+
+    .row:nth-child(3) {
+        line-height: 35px;
+        top: -20px;
+        padding-bottom: 9px;
+    }
+
+    .row:nth-child(4) {
+        display: flex;
+        flex-wrap: nowrap;
+        line-height: 35px;
+        top: -25px;
+        padding-bottom: 9px;
+    }
+
+    .row:nth-child(5) {
+        line-height: 35px;
+        top: -30px;
+        padding-bottom: 9px;
+    }
+
+    .lecture__support {
+        margin-top: -7px;
+        letter-spacing: -1.2px;
+    }
+
+    .lecture__support-left {
+        display: block;
+    }
+
+    .stages {
+        margin-top: 111px;
+    }
+
+    .stages__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .stages__subtitle {
+        max-width: 100%;
+        position: static;
+        font-size: 18px;
+        line-height: 23px;
+        display: block;
+        margin-top: 8px;
+    }
+
+    .stages__layout {
+        display: none;
+    }
+
+    .stages-mob {
+        display: block;
+        margin-top: -73px;
+    }
+
+    .stages-slider-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 17px;
+        position: relative;
+        left: -6px;
+        top: 6px;
+
+    }
+
+    .stages-slider-controls__dots {
+        display: flex;
+        gap: 5px;
+    }
+
+    .stages-slider-controls__dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+    }
+
+    .stages-slider-controls__dot.active {
+        background-color: #000;
+    }
+
+    .block {
+        display: none;
+        height: 300px;
+        padding-top: 60px;
+    }
+
+    .number-1,
+    .number-2,
+    .number-4,
+    .number-5 {
+        display: flex;
+        gap: 5px;
+    }
+
+    .number-1,
+    .number-4 {
+        margin-bottom: 30px;
+    }
+
+    .number-2,
+    .number-5 {
+        letter-spacing: -0.2px;
+    }
+
+    .block__text {
+        max-width: 232px;
+    }
+
+    .block.active {
+        display: block;
+    }
+
+    .stages-slider-controls__button {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 37px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mob__button--prev::before,
+    .mob__button--next::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        transform: rotate(45deg);
+    }
+
+    .mob__button--prev::before {
+        top: 50%;
+        left: 14%;
+        transform: translate(-50%, -50%) rotate(-135deg);
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+
+    .mob__button--next::before {
+        top: 50%;
+        left: 85%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        position: relative;
+        top: 7px;
+        left: 6px;
+    }
+
+    .stages-slider-controls__button:hover {
+        background-color: #FBCE51;
+    }
+
+    .stages-slider-controls__button:disabled {
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: not-allowed;
+    }
+
+    .plane-mob {
+        position: relative;
+        top: 39px;
+        left: 12px;
+        width: 332px;
+        height: 181px;
+        transform: rotate(-4deg);
+        z-index: 1;
+    }
+
+    .block__text {
+        font-size: 18px;
+    }
+
+    .block__number-3-6-7 {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .participants__title {
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    .participants {
+        margin-top: 124px;
+        padding-bottom: 100px;
+
+    }
+
+    .participants__image {
+        max-width: 243px;
+        height: 246px;
+    }
+
+    .participants__list {
+        margin-top: 30px;
+    }
+
+    .participants__header {
+        display: block;
+        margin-bottom: -28px;
+    }
+
+    .slider__indicator {
+        font-size: 16px;
+    }
+
+    .slider-controls {
+        justify-content: center;
+        top: 467px;
+    }
+
+    .slider-controls__button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .slider-controls__button--prev::before {
+        left: 36%;
+    }
+
+    .slider-controls__button--next::before {
+        left: 64%;
+    }
+
+    .participants__header-ticker {
+        margin-top: 84px;
+    }
+
+    .footer__container {
+        padding: 11px 0px;
+    }
+
+    .footer__text span {
+        display: block;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .header__button:first-child {
+        padding: 15px 5px;
+    }
+
+    .header__button:last-child {
+        padding: 15px 42px;
+    }
+
+    .header__buttons {
+        margin-bottom: 182px;
+    }
+
+    .lecture__content-title {
+        font-size: 22px;
+    }
+
+    .lecture__content-img {
+        max-width: 285px;
+        height: 193px;
+    }
+
+    .lecture__img-session {
+        max-width: 300px;
+        height: 345px;
+    }
+
+    .stages__title {
+        font-size: 28px;
+    }
+
+    .plane-mob {
+        width: 274px;
+    }
+
+    .block__number {
+        font-size: 14px;
+        width: 52px;
+        height: 20px;
+    }
+
+    .block__text {
+        font-size: 16px;
+    }
+
+    .slider-controls__button--prev::before {
+        left: 34%;
+    }
+
+    .slider-controls__button--next::before {
+        left: 66%;
+    }
+}
