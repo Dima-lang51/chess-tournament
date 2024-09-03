@@ -944,7 +944,7 @@ body {
 @media (max-width: 402px) {
     .plane 
     {
-        bottom: 1183px;
+        bottom: 1203px;
         width: 321px;
         height: 226px;
     }
@@ -954,6 +954,14 @@ body {
 
     .lecture__description, .lecture__subtitle {
         font-size: 32px;
+    }
+
+    .slider-controls__button--next::before {
+        left: 65%;
+    }
+
+    .slider-controls__button--prev::before {
+        left: 36%;
     }
 }
 
@@ -985,6 +993,7 @@ body {
     }
 
     .header {
+        height: 811px;
         background: url('../img/main-banner-mob.png');
         background-position: center top;
     }
