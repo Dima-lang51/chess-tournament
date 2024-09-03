@@ -883,7 +883,7 @@ body {
 
 @media (max-width: 475px) {
     .header__title {
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .header__buttons {
@@ -931,7 +931,7 @@ body {
 
     .header__buttons {
         margin-top: 0px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
 
     .plane {
